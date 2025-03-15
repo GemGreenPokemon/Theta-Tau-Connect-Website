@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles that will be applied after Tailwind */
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global link styles */
+a {
+  color: #8B0000; /* Theta Tau dark red */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFCC33; /* Theta Tau gold */
+}
+
+/* Fix for navigation spacing */
+.space-x-8 > * + * {
+  margin-left: 2rem;
+}
